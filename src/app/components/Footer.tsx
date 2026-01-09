@@ -34,7 +34,7 @@ export function Footer() {
           <div>
             <h4 className="text-pink-600 mb-4">Liên kết</h4>
             <ul className="space-y-2">
-              {['Về chúng tôi', 'Sản phẩm', 'Blog', 'Liên hệ'].map((link) => (
+              {['Về Love LQV', 'Tính năng', 'Hướng dẫn sử dụng', 'Liên hệ'].map((link) => (
                 <li key={link}>
                   <motion.a
                     href="#"
@@ -52,7 +52,7 @@ export function Footer() {
           <div>
             <h4 className="text-pink-600 mb-4">Hỗ trợ</h4>
             <ul className="space-y-2">
-              {['Chính sách đổi trả', 'Hướng dẫn mua hàng', 'Phương thức thanh toán', 'Giao hàng'].map((link) => (
+              {['Bảo mật thông tin', 'Hướng dẫn thêm kỷ niệm', 'Quản lý quà tặng', 'Câu hỏi thường gặp'].map((link) => (
                 <li key={link}>
                   <motion.a
                     href="#"
