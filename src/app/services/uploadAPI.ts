@@ -6,8 +6,11 @@ export const uploadAPI = {
       reader.onloadend = async () => {
         try {
           const base64String = reader.result as string;
+          const API_URL = import.meta.env.PROD 
+            ? 'https://lovelqv.onrender.com'
+            : 'http://localhost:5000';
           
-          const response = await fetch('http://localhost:5000/api/upload/upload', {
+          const response = await fetch(`${API_URL}/api/upload/upload`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',

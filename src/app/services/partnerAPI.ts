@@ -1,4 +1,6 @@
-const API_URL = 'http://localhost:5000/api/partners';
+const API_URL = import.meta.env.PROD 
+  ? 'https://lovelqv.onrender.com/api/partners'
+  : 'http://localhost:5000/api/partners';
 
 export const partnerAPI = {
   // Get all approved partners
