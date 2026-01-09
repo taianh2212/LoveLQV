@@ -327,15 +327,13 @@ export function PartnerDetailModal({ partner, isOpen, onClose, onAddMemory, onAd
                 <div className="bg-gray-50 rounded-2xl p-6">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-lg font-bold text-gray-800">📸 Kỷ niệm</h3>
-                    {isAdmin && (
-                      <button
-                        onClick={() => setShowAddMemory(!showAddMemory)}
-                        className="flex items-center gap-2 px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors"
-                      >
-                        <Plus className="w-4 h-4" />
-                        Thêm ảnh
-                      </button>
-                    )}
+                    <button
+                      onClick={() => setShowAddMemory(!showAddMemory)}
+                      className="flex items-center gap-2 px-4 py-2 bg-pink-500 hover:bg-pink-600 text-white rounded-lg transition-colors"
+                    >
+                      <Plus className="w-4 h-4" />
+                      Thêm ảnh
+                    </button>
                   </div>
 
                   {showAddMemory && (
@@ -427,15 +425,13 @@ export function PartnerDetailModal({ partner, isOpen, onClose, onAddMemory, onAd
                 <div className="bg-gray-50 rounded-2xl p-6">
                   <div className="flex items-center justify-between mb-4">
                     <h3 className="text-lg font-bold text-gray-800">🎁 Quà tặng</h3>
-                    {isAdmin && (
-                      <button
-                        onClick={() => setShowAddGift(!showAddGift)}
-                        className="flex items-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors"
-                      >
-                        <Plus className="w-4 h-4" />
-                        Thêm quà
-                      </button>
-                    )}
+                    <button
+                      onClick={() => setShowAddGift(!showAddGift)}
+                      className="flex items-center gap-2 px-4 py-2 bg-purple-500 hover:bg-purple-600 text-white rounded-lg transition-colors"
+                    >
+                      <Plus className="w-4 h-4" />
+                      Thêm quà
+                    </button>
                   </div>
 
                   {showAddGift && (
