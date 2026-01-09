@@ -8,7 +8,7 @@ node_modules/
 
 # Production
 /build
-/dist
+# /dist  # Commented out - need to commit dist for GitHub Pages
 
 # Misc
 .DS_Store
