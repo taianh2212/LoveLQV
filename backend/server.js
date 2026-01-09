@@ -10,7 +10,9 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://taianh2212.github.io'
+    'https://taianh2212.github.io',
+    'https://love-lqv.vercel.app',
+    /\.vercel\.app$/ // Allow all Vercel preview deployments
   ],
   credentials: true
 }));
