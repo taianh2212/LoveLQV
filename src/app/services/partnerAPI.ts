@@ -128,7 +128,9 @@ export const partnerAPI = {
 };
 
 // Auth API
-const AUTH_URL = 'http://localhost:5000/api/auth';
+const AUTH_URL = import.meta.env.PROD 
+  ? 'https://lovelqv.onrender.com/api/auth'
+  : 'http://localhost:5000/api/auth';
 
 export const authAPI = {
   login: async (username: string, password: string) => {
